@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+test-results/
+playwright-report/
+.env*
+.vercel/
+.openai/runtime/
+.openai/hosting.local.json
+*.zip
+*.tar.gz
+*.log
