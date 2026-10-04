@@ -6,6 +6,8 @@ AI LaunchPass helps a student find a relevant AI project, create a demo workshop
 
 This is an independent NxtWave Growth Challenge submission prototype. The workshop is **“Build Your First AI Project in 60 Minutes.”** Campaign numbers are synthetic; registration does not reserve an actual workshop seat, and reward milestones do not promise actual rewards. No campaign has been executed through this app.
 
+**Hosted preview:** [Open AI LaunchPass](https://ai-launchpass-growth-demo.joseph12378908.chatgpt.site). Published successfully through Sites on 5 October 2026 with owner-only access. This is a private preview, not a publicly accessible interview link. Use the Vercel steps below to deploy a public submission link under your account.
+
 ## Run locally
 
 Requires **Node.js 22 or newer** and npm. No API keys, environment variables, database or account setup are needed.

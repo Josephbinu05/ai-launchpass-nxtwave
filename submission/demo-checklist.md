@@ -50,7 +50,8 @@ Only mark a box after observing the result. The app is a simulation: use fiction
 
 ## Hosting and final submission
 
-- [ ] Deploy the built app and open the actual HTTPS URL in a fresh browser.
+- [x] Deploy the built app; Sites confirmed the owner-private deployment succeeded.
+- [ ] Verify access from an evaluator's browser after publishing to a public host.
 - [ ] Confirm referral query parameters survive navigation on the deployed origin.
 - [ ] Check student and growth views at the deployed URL.
 - [x] README contains local setup, commands, static export, Vercel deployment, assumptions and limitations.
@@ -61,10 +62,12 @@ Only mark a box after observing the result. The app is a simulation: use fiction
 - [ ] Record the video, verify its duration is below 3:00, and upload it where the submission requires.
 - [ ] Add the actual working-asset and video links to the final submission.
 
-**Live URL:** Not recorded in this checklist. Add only after deployment verification.
+**Live URL:** [AI LaunchPass private preview](https://ai-launchpass-growth-demo.joseph12378908.chatgpt.site). Owner-only access; Sites confirmed deployment success on 5 October 2026. Public evaluator access and hosted-origin browser checks are not claimed. Use the README's Vercel instructions for a public interview link.
 
 **Video URL:** Not recorded in this checklist. Add only after recording and upload.
 
 ## Evidence log
 
 Verified 5 October 2026 on Windows with Microsoft Edge against the production export. TypeScript, ESLint, 13 domain tests and six browser acceptance tests pass. The browser suite covers all eight main routes at 1280px and 390px, registration and referral persistence, clipboard text, WhatsApp URL, generated referrals, campus target changes, 504/468 projections, gap recommendations, budget overflow, reset, required/invalid fields, unknown referral codes and corrupt-storage recovery. No browser console errors or uncaught exceptions occurred. Desktop and mobile screenshots were inspected. Production build exports all project routes; a build finalizer fixes Next.js Windows route-payload paths. Deployment, slide export and recording remain separate until verified below.
+
+Sites deployment `appgdep_6ac2dced3e1c8191abfffcc84a5c44d3` succeeded from source commit `51d83c7d5f32de9d255e62f8102919dc5fe5ff24`. The build uses static assets only. The local Windows packager required Git Bash and `TAR_OPTIONS=--force-local`; this is a hosting-helper detail, not a requirement to run or deploy through Vercel. Keyboard checks confirmed Tab reaches the skip link, Space selects matcher options, and focus outlines are visible. The browser's zero-base scenario projects zero registrations.
