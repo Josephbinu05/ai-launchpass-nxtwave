@@ -5,9 +5,9 @@ export function Landing() {
   return <div className="landing">
     <section className="hero page-width">
       <div className="hero-copy"><div className="hero-eyebrow"><span className="live-dot"/> YOUR FIRST BUILD STARTS HERE <span className="tiny-pill">100% FREE</span></div>
-        <h1>One hour.<br/>Your first <span className="text-teal">AI project.</span><span className="title-spark">✳</span></h1>
+        <h1>What <span className="hero-gradient">AI project</span> could <em>YOU</em> build in <span className="hero-time">60 minutes?</span></h1>
         <p className="hero-description">What could <strong>you</strong> build in 60 minutes? Find a project that fits your branch, skills, and curiosity. Then bring it to life in NxtWave’s free workshop.</p>
-        <Link href="/match" className="button button-primary button-lg">Find My AI Project <ArrowRight size={19}/></Link>
+        <div className="hero-actions"><Link href="/match" className="button button-primary button-lg">Find My AI Project <ArrowRight size={19}/></Link><Link href="/leaderboard" className="button button-secondary button-lg">Explore campuses <ArrowUpRight size={17}/></Link></div>
         <div className="cta-note"><Check size={14}/> 3 questions <span>·</span> 30 seconds <span>·</span> No AI experience needed</div>
         <div className="hero-mini-stats"><span><GraduationCap size={19}/><span>Built for <strong>final-year engineers</strong></span></span><span><Clock3 size={19}/><span>A small commitment.<strong>A real starting point.</strong></span></span></div>
       </div>

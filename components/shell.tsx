@@ -13,9 +13,10 @@ export function Shell({ children }: { children: React.ReactNode }) {
     <header className="site-header">
       <Link href="/" className="brand" aria-label="AI LaunchPass home"><span className="brand-icon"><Zap size={21} fill="currentColor" /></span><span>AI Launch<span className="brand-light">Pass</span><small>A NXTWAVE GROWTH CONCEPT</small></span></Link>
       <nav className="main-nav" aria-label="Main navigation">
-        <Link href="/match" className={path === '/match/' || path === '/match' ? 'active' : ''}>Discover a project</Link>
-        <Link href="/leaderboard" className={path.startsWith('/leaderboard') ? 'active' : ''}>Campus leaderboard</Link>
-        {currentStudent ? <Link href="/pass" className={path.startsWith('/pass') ? 'active' : ''}>My LaunchPass</Link> : <Link href="/#workshop">The workshop <ArrowUpRight size={13}/></Link>}
+        <Link href="/match" className={path === '/match/' || path === '/match' ? 'active' : ''}>Discover Project</Link>
+        <Link href="/leaderboard" className={path.startsWith('/leaderboard') ? 'active' : ''}>Leaderboard</Link>
+        <Link href="/#workshop">About Workshop <ArrowUpRight size={13}/></Link>
+        {currentStudent && <Link href="/pass" className={path.startsWith('/pass') ? 'active' : ''}>My LaunchPass</Link>}
       </nav>
       <nav className="mode-toggle" aria-label="Switch view"><Link href={currentStudent ? '/pass' : '/'} aria-current={!growth ? 'page' : undefined} className={!growth ? 'selected' : ''}><GraduationCap size={15}/> <span>Student View</span></Link><Link href="/growth" aria-current={growth ? 'page' : undefined} className={growth ? 'selected' : ''}><LayoutDashboard size={14}/><span>Growth Team View</span></Link></nav>
     </header>

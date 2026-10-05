@@ -45,7 +45,7 @@ test('student discovery, saved pass, copied invitation and same-browser referral
   await expect(page.getByRole('heading', { name: 'Meet your AI project match.', exact: true })).toBeVisible();
   const projectTitle = await page.getByRole('article').getByRole('heading', { level: 2 }).innerText();
   expect(projectTitle).toMatch(/Resume|Interview/);
-  await page.getByRole('link', { name: 'Reserve My Seat', exact: true }).click();
+  await page.getByRole('link', { name: 'Build This in the Free Workshop', exact: true }).click();
   await registerSample(page, 'Riya Demo', 'riya.demo@example.com', '9000000001');
   await expect(page.getByRole('heading', { name: projectTitle, exact: true })).toBeVisible();
 
